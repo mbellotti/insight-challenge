@@ -5,6 +5,10 @@
 # Challenge Summary
 Written in python3, using only default python modules :)
 
+To run unittests use the following command:
+'''python3 -m unittest insight_testsuite/tests/test_process/[test file]'''
+
+
 ## Details of Implementation
 ### Feature 1
 Parsed the log file and built a list of tuples containing the frequency count and the ip address, plus dictionary tracking where specific ip addresses are in the list (index value). I used a list of tuples because it meant I could take advantage of python's timesort algorithm while still keeping the count and the ip address associated.

@@ -1,7 +1,13 @@
-import argparse, re, os
+import argparse, re, os, sys
 import datetime as dt
 from itertools import islice
 
+## Before everything else, make sure we're not using Python 2.x
+if sys.version_info[0] < 3:
+	print("ERROR: This program requires Python 3. Please upgrade and try again.")
+	sys.exit()
+
+## Setup some constants
 DEFAULT_LOG_PATH = os.path.abspath("log_input/log.txt")
 DEFAULT_OUTPUT_PATH = os.path.abspath("log_output/")
 LOG_DATA = re.compile(r"^(?P<ip>.*)\s-\s-\s\[(?P<time>[A-Za-z0-9\/:\-\s]*)\]\s?(?P<target>.*)\s(?P<bits>\d*|-)\n")
