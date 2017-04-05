@@ -1,6 +1,4 @@
 *.DS_Store
-log_input/log.txt
-log_output/*.txt
 insight_testsuite/temp
 insight_testsuite/results.txt
 src/__pycache__

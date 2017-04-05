@@ -1,0 +1,4 @@
+# Ignore everything in this directory, we don't want to version control data files
+*
+# Except this file
+!.gitignore
