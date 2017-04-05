@@ -42,7 +42,7 @@ class TestFail2Ban(unittest.TestCase):
 	def test_check_and_ban_expired(self):
 		ip = (['01/Jul/1995:00:00:09 -0400', '01/Jul/1995:00:00:19 -0400', '01/Jul/1995:00:00:20 -0400'], 1)
 		time = '01/Jul/1995:00:06:22 -0400'
-		self.assertEquals(pl.LogProcessor().check_and_ban(ip,time), 2)
+		self.assertEqual(pl.LogProcessor().check_and_ban(ip,time), 2)
 		
 	def test_check_results(self):
 		data = pl.LogProcessor().main(DEFAULT_OUTPUT_PATH, 'fail2ban',TEST_LOG_PATH, 1)

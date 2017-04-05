@@ -5,6 +5,6 @@
 
 # I'll execute my programs, with the input directory log_input and output the files in the directory log_output
 . env/bin/activate
-python src/process_log.py -m all
+python3 src/process_log.py -m all
 
 

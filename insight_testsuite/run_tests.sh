@@ -124,10 +124,3 @@ function run_all_tests {
 
 check_project_struct
 run_all_tests
-
-# Run custom tests
-for f in ${GRADER_ROOT}/tests/test_process
-do
-  echo "Running tests in $f..."
-  python3 -m unittest ${GRADER_ROOT}/tests/test_process/$f
-done
